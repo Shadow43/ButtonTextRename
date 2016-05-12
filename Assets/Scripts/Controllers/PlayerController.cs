@@ -32,17 +32,15 @@ public class PlayerController : MonoBehaviour {
         if (UIController.BlockChoice == 1)
         {
             //            Debug.Log("Direction Changed");
-            if (UIController.DirVar == 1) Speed = Speed + 0.2f;
+            if (UIController.DirVar == 1) 
             transform.eulerAngles = new Vector3(transform.position.x, 0, transform.position.y);
             if (UIController.DirVar == 2)
-                Speed = Speed+0.2f;
                 transform.eulerAngles = new Vector3(transform.position.x, 90, transform.position.y);
             if (UIController.DirVar == 3)
-                Speed = Speed + 0.2f;
                 transform.eulerAngles = new Vector3(transform.position.x, 180, transform.position.y);
             if (UIController.DirVar == 4)
-                Speed = Speed + 0.2f;
                 transform.eulerAngles = new Vector3(transform.position.x, 270, transform.position.y);
+            Speed = Speed + 0.2f;
             UIController.ButtonClick = false;
             UIController.BlockChoice = 0;
         }

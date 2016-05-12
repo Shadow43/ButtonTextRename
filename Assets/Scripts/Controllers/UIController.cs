@@ -18,6 +18,7 @@ public class UIController : MonoBehaviour
     public UI_TimeRemaining TimeRemainingDisplay;
     public UI_PlacedBlocks BlocksDisplay;
     public GameController gamecontroller;
+    public UI_DirectionButton DirectionDisplay;
 
     // Use this for initialization
     void Awake()
@@ -148,6 +149,10 @@ public class UIController : MonoBehaviour
     public void NumberOfBlocks(int BlocksPlaced)
     {
         BlocksDisplay.NumberOfBlocks(BlocksPlaced);
+    }
+    public void DirectionChange()
+    {
+        DirectionDisplay.DirectionChange();
     }
 
 }
